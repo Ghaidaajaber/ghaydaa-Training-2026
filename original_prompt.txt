@@ -1,0 +1,315 @@
+# Training 2026 – CSS Animation Website Project
+
+I want you to create a website using HTML, CSS, and JavaScript for my web development project. The website should be called **Training 2026**, and the main topic should be CSS animations.
+
+I want the website to look modern, organized, and attractive, with dark red as the main color. At the same time, please keep the code simple and easy to understand because I need to explain how it works to my instructor.
+
+Try to make the code as efficient as possible, without unnecessary repetition, complicated functions, or too many HTML elements. Use CSS for animations whenever possible and JavaScript only when needed.
+
+## 1. Header and Navbar
+
+At the top of the website, create a full-width dark red header.
+
+On the left side, add a graduation-cap icon next to the website name **Training 2026**.
+
+On the right side, add three buttons:
+
+- **العربية:** With a globe icon to switch between English and Arabic.
+- **Add Content:** With a plus icon.
+- **Clear Content:** With a trash icon.
+
+The language button should translate the entire website, including the header, sidebar, buttons, headings, descriptions, forms, messages, and footer.
+
+When Arabic is selected, change the layout to RTL and move the sidebar to the right. When English is selected, return everything to LTR.
+
+Make sure all elements stay aligned correctly in both languages.
+
+### Adding and Removing Header Content
+
+I want the Add Content and Clear Content buttons to work inside the red header, not in the main content area.
+
+Every time I click **Add Content**, add a new line below the Training 2026 title inside the header.
+
+For example:
+
+Update 1
+
+Update 2
+
+Update 3
+
+In Arabic mode, show:
+
+تحديث 1
+
+تحديث 2
+
+تحديث 3
+
+Each update should have a small square × button next to it so I can remove that specific update without removing the others.
+
+When I delete an update, keep the original numbers of the remaining updates. For example, if I delete Update 2, Update 1 and Update 3 should stay the same.
+
+The header should automatically become taller when I add updates and return to its original height when I remove them. The sidebar and main content should move down or up with the header without overlapping.
+
+When I click **Clear Content**, show a confirmation message before removing all added updates. After clearing, reset the counter so the next update starts from Update 1.
+
+Use localStorage to save the updates so they remain after refreshing the page.
+
+## 2. Sidebar
+
+Create a light gray sidebar with small colored icons.
+
+The sidebar should contain these options:
+
+1. Dashboard
+2. HTML Editor
+3. CSS Styles
+4. JS Console
+5. Components
+6. Templates
+7. Snippets
+8. Projects
+9. Live Preview
+10. Responsive Design
+11. Color Palette
+12. Typography
+13. Animations
+14. Debugger
+15. Settings
+
+Add a hover effect to each option and highlight the currently selected item.
+
+I want the sidebar options to actually work when clicked. Each option should display its related content in the main area.
+
+You can make simple versions of the editors and tools. For example, the HTML Editor can have a text area for writing HTML, the CSS Styles section can allow basic styling changes, and the Live Preview can show the result.
+
+Keep these tools simple because this is a student project.
+
+I also want to resize the sidebar by dragging its edge with the mouse.
+
+When I make the sidebar wider or narrower, the main content should automatically adjust without overlapping or going outside the screen.
+
+On mobile screens, make the sidebar collapsible using a menu button.
+
+## 3. CSS Animation Banner
+
+In the main content area, create two sections next to each other.
+
+On the left, add a large dark red banner with the title **CSS Animation** in white, centered in the middle.
+
+On the right, display a realistic 3D human heart on a white background.
+
+### Leaf Animation
+
+For the red banner, I want animated leaf shapes instead of squares.
+
+The leaves should look like actual leaves, not rectangles, circles, or rounded squares.
+
+Use different shades of transparent red, pink, and burgundy to match the background.
+
+The leaves should move continuously **from right to left** across the banner.
+
+Some leaves should move slightly up and down while moving left. Others should rotate slowly, change size, or become more or less transparent.
+
+Use different sizes, animation speeds, and delays so the leaves do not all move together.
+
+Some leaves can have only an outline, while others can be filled with transparent colors.
+
+When a leaf reaches the left side of the banner, it should disappear and start again from the right side.
+
+Keep all the leaves inside the banner, and make sure they do not hide the CSS Animation title.
+
+Use CSS keyframes for these animations instead of complicated JavaScript.
+
+I want the movement to be smooth, continuous, and natural.
+
+## 4. Interactive 3D Human Heart
+
+On the right side of the banner, I want a realistic anatomical 3D human heart.
+
+It should look like a real human heart, not a heart emoji, cartoon heart, or simple heart shape.
+
+The heart should have natural fleshy colors, such as soft pink, muted red, and realistic tissue colors. I do not want it to look bright red, plastic, or cartoonish.
+
+Add realistic anatomical details, blood vessels, natural textures, and lighting to make it look three-dimensional.
+
+The heart should rotate slowly and continuously by itself.
+
+I also want to interact with it using the mouse.
+
+When I click and hold the heart, I should be able to drag it left, right, up, or down to rotate it and view it from different angles.
+
+While I am dragging the heart, the automatic rotation should pause. When I release the mouse, it should continue rotating smoothly.
+
+The interaction should also work on mobile devices using touch.
+
+You can use Three.js and OrbitControls for this part.
+
+Please include a working 3D anatomical heart model inside the project files and make sure it loads correctly.
+
+Keep the heart centered, responsive, and inside its white container.
+
+## 5. HTML, CSS & JavaScript Section
+
+Below the CSS Animation banner and the 3D heart, add a section titled:
+
+**HTML, CSS & JavaScript**
+
+Write a short introduction explaining how these three technologies work together to create websites.
+
+Below the introduction, add three simple sections or cards:
+
+- **HTML:** Use an orange HTML icon and explain that HTML is used to create the structure and content of a webpage.
+- **CSS:** Use a blue CSS icon and explain that CSS controls the design, colors, layout, and animations.
+- **JavaScript:** Use a yellow JavaScript icon and explain that JavaScript adds interactivity and functionality.
+
+Keep the explanations short and easy to understand.
+
+Make the cards organized, with simple hover effects and enough spacing between them.
+
+## 6. Floating Add Button
+
+Add a red circular + button near the bottom-right side of the main content.
+
+I want this button to slightly overlap the boundary between the main content and the footer, instead of being completely inside one section.
+
+Give it a small shadow so it stands out.
+
+When I move the mouse over the button, its red color should become darker and the button should move slightly upward.
+
+Use a smooth CSS transition for this effect.
+
+When the mouse leaves, the button should return to its original color and position.
+
+Clicking the floating + button should do exactly the same thing as clicking Add Content in the navbar. It should add a new update inside the red header.
+
+Make sure the button stays in the correct position when resizing the page and does not cover important text.
+
+It should also work correctly in Arabic mode.
+
+## 7. Responsive Design
+
+Make the website responsive for desktop, tablet, and mobile screens.
+
+Use CSS Flexbox or Grid to organize the layout.
+
+On large screens, the CSS Animation banner and the 3D heart should appear next to each other.
+
+On smaller screens, the heart can move below the banner.
+
+The sidebar should collapse on mobile screens, and the navbar buttons should remain accessible.
+
+Make sure the content does not overlap, overflow, or go outside its containers.
+
+The sidebar resizing should also work correctly without breaking the layout.
+
+## 8. Footer and Student Information
+
+Add a simple footer at the bottom of the website.
+
+In English mode, display:
+
+© 2026 Training 2026. All rights reserved.
+
+Developed by: Ghaydaa Jaber | Student ID: 20240447
+
+In Arabic mode, display:
+
+© 2026 Training 2026. جميع الحقوق محفوظة.
+
+تم التطوير بواسطة: Ghaydaa Jaber | الرقم الجامعي: 20240447
+
+Keep the footer simple, organized, and consistent with the dark red website theme.
+
+Make sure the student information is clearly visible and properly aligned on desktop and mobile screens.
+
+## 9. Code Requirements
+
+Use HTML5, CSS3, and vanilla JavaScript.
+
+You can use Three.js for the 3D heart, but do not use React, Angular, Vue, or unnecessary libraries.
+
+Keep the code simple, readable, and efficient.
+
+Try to avoid unnecessary HTML elements, repeated CSS rules, and complicated JavaScript functions.
+
+Reuse functions when possible instead of writing the same code multiple times.
+
+Use CSS animations and transitions instead of JavaScript for visual effects whenever possible.
+
+Keep the project organized into separate files:
+
+- index.html
+- style.css
+- script.js
+
+Use clear variable and function names, and add a few simple comments to explain important parts of the code.
+
+I want to be able to understand and explain the project during my presentation.
+
+## 10. Functionality
+
+Please make sure everything actually works, not just the design.
+
+The following features should work correctly:
+
+- Switching between English and Arabic, including RTL and LTR layouts.
+- Adding updates inside the header.
+- Removing individual updates using their × buttons.
+- Clearing all updates after confirmation.
+- Saving updates using localStorage.
+- Opening different sidebar sections.
+- Resizing the sidebar by dragging its edge.
+- Collapsing the sidebar on mobile.
+- Continuous leaf animations moving from right to left.
+- Automatic rotation of the 3D heart.
+- Rotating the heart manually using mouse or touch.
+- Pausing automatic rotation while dragging.
+- Continuing automatic rotation after releasing.
+- The floating + button and its hover effect.
+- Responsive layouts on different screen sizes.
+
+Please check that these features work together without layout problems or JavaScript errors.
+
+## 11. README File
+
+Create a README.md file that includes:
+
+- Project name and short description.
+- Technologies used.
+- Main features.
+- Instructions for running the website.
+- Project file structure.
+- Student information.
+
+Include:
+
+**Student Name:** Ghaydaa Jaber
+
+**Student ID:** 20240447
+
+Also add a section called **Original AI Prompt**.
+
+Under this section, copy my complete original prompt exactly as I sent it, without changing, shortening, or summarizing anything.
+
+## 12. Final ZIP File
+
+Finally, put the complete project into one ZIP file named:
+
+**CSS_Animation_Project.zip**
+
+The ZIP file should include:
+
+- index.html
+- style.css
+- script.js
+- README.md
+- The realistic anatomical 3D heart model
+- Any other assets needed for the website
+
+Make sure all file paths are correct and that the website runs properly using VS Code Live Server.
+
+Please provide the complete working ZIP file.
+
+I want the final website to look good and have all the requested features, but the code should still be simple enough for a web development student to understand and explain.
